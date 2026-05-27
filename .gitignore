@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.log
+*.bag
+*.db
+build/
+install/
+log/
+.ros/
+results/*.png
+results/*.csv
