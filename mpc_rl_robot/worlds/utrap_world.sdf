@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="utrap_world">
+
+    <!-- Light -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <!-- Ground -->
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <!-- U-SHAPE: Left Wall -->
+    <model name="left_wall">
+      <static>true</static>
+      <pose>-1.0 2.5 0.5 0 0 0</pose>
+      <link name="link">
+        <collision name="col"><geometry><box><size>0.2 5.0 1.0</size></box></geometry></collision>
+        <visual name="vis"><geometry><box><size>0.2 5.0 1.0</size></box></geometry>
+          <material><ambient>1 0 0 1</ambient></material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- U-SHAPE: Right Wall -->
+    <model name="right_wall">
+      <static>true</static>
+      <pose>1.0 2.5 0.5 0 0 0</pose>
+      <link name="link">
+        <collision name="col"><geometry><box><size>0.2 5.0 1.0</size></box></geometry></collision>
+        <visual name="vis"><geometry><box><size>0.2 5.0 1.0</size></box></geometry>
+          <material><ambient>1 0 0 1</ambient></material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- U-SHAPE: Bottom Wall -->
+    <model name="bottom_wall">
+      <static>true</static>
+      <pose>0.0 5.0 0.5 0 0 0</pose>
+      <link name="link">
+        <collision name="col"><geometry><box><size>2.2 0.2 1.0</size></box></geometry></collision>
+        <visual name="vis"><geometry><box><size>2.2 0.2 1.0</size></box></geometry>
+          <material><ambient>1 0 0 1</ambient></material>
+        </visual>
+      </link>
+    </model>
+
+  </world>
+</sdf>
