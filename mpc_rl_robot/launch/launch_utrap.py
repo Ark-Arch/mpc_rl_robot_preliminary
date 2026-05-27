@@ -7,7 +7,7 @@ from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description():
 
-    world_file = os.path.expanduser('~/mpc_rl_robot/worlds/utrap_world.sdf')
+    world_file = os.path.expanduser('~/mpc_rl_robot_preliminary/mpc_rl_robot/worlds/utrap_world.sdf')
 
     return LaunchDescription([
 
