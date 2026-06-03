@@ -30,8 +30,9 @@ def generate_launch_description():
                     'models', 'turtlebot3_burger', 'model.sdf'
                 ),
                 '-x', '0.0',
-                '-y', '0.0',
-                '-z', '0.01'
+                '-y', '2.5',
+                '-z', '0.01',
+		'-Y', '1.5708'
             ],
             output='screen'
         ),

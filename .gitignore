@@ -10,3 +10,4 @@ log/
 .ros/
 results/*.png
 results/*.csv
+results/screenshots/

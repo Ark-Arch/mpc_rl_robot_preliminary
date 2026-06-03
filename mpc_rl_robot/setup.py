@@ -25,6 +25,8 @@ setup(
     license='MIT',
     tests_require=['pytest'],
     entry_points={
-        'console_scripts': [],
+        'console_scripts': [
+		'mpc_node = mpc_rl_robot.mpc_node:main',
+	],
     },
 )
